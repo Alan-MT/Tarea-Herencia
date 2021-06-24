@@ -6,6 +6,10 @@ import src.Interfaces.girar;
 
 public class Camion extends Vehiculo implements girar, Transporte, Aceleracion{
 
+    
+    public Camion() {
+    }
+
     public Camion(int cantGalones, int cantPasajero, int velocidadMaxima, double aceleracion, boolean gasofa) {
         super(cantGalones, cantPasajero, velocidadMaxima, aceleracion, gasofa);
     }

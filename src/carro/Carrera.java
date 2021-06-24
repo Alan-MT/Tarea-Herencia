@@ -4,6 +4,10 @@ import src.Interfaces.*;
 
 public class Carrera extends Vehiculo implements girar,Aceleracion{
 
+    public Carrera(){
+        
+    }
+
     public Carrera(int cantGalones, int cantPasajero, int velocidadMaxima, double aceleracion, boolean gasofa) {
         super(cantGalones, cantPasajero, velocidadMaxima, aceleracion, gasofa);
     }
@@ -28,5 +32,10 @@ public class Carrera extends Vehiculo implements girar,Aceleracion{
         return 3*super.aceleracion;
     }
 
+    @Override
+    public String toString() {
+        return "\nGalones: " + CantGalones + "\nCantitdad Pasajero: " + CantPasajero + "\nTipo de Combustible: " + getTipoCombus(Gasofa)
+                + "\nVelocidad Maxima: " + VelocidadMaxima + "\naceleracion base: " + aceleracion+ "\nAceleracion turbo: "+getAceleracion();
+    }
 
 }

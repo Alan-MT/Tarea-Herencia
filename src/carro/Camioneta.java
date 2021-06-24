@@ -4,8 +4,12 @@ import src.Interfaces.*;
 
 public class Camioneta extends Vehiculo implements girar, Transporte, Aceleracion{
 
+
     public Camioneta(int cantGalones, int cantPasajero, int velocidadMaxima, double aceleracion, boolean gasofa) {
         super(cantGalones, cantPasajero, velocidadMaxima, aceleracion, gasofa);
+    }
+
+    public Camioneta() {
     }
 
     @Override

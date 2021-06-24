@@ -46,11 +46,7 @@ public abstract class Vehiculo{
     public void setGasofa(boolean gasofa) {
         Gasofa = gasofa;
     }
-    @Override
-    public String toString() {
-        return "Galones=" + CantGalones + "\n, Cantitdad Pasajero=" + CantPasajero + "\n, Tipo de Combustible=" + getTipoCombus(Gasofa)
-                + "\n, Velocidad Maxima" + VelocidadMaxima + "\n, aceleracion base: " + aceleracion;
-    }
+
     public String getTipoCombus(boolean tipo){
         if (tipo) {
             return "Gasolina";
