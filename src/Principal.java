@@ -119,7 +119,7 @@ public class Principal {
         System.out.println("    2. Vehiculo de Carga");
         System.out.println("    3. Auto de Carrera");
         System.out.print("\n  Escriba el numero de la opcion: ");
-        int opcion = Integer.parseInt(Scan.nextLine());
+        int opcion = Scan.nextInt();
 
         switch (opcion) {
             case 1:

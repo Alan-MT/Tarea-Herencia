@@ -36,5 +36,10 @@ public class Camion extends Vehiculo implements girar, Transporte, Aceleracion{
         System.out.println("\n Aceleracion Baja");
         
     }
+    @Override
+    public String toString() {
+        return "\nGalones: " + CantGalones + "\nCantitdad Pasajero: " + CantPasajero + "\nTipo de Combustible: " + getTipoCombus(Gasofa)
+                + "\nVelocidad Maxima: " + VelocidadMaxima + "\naceleracion base: " + aceleracion;
+    }
     
 }

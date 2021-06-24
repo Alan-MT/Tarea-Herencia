@@ -34,6 +34,11 @@ public class Camioneta extends Vehiculo implements girar, Transporte, Aceleracio
         System.out.println("\n Aceleracion Normal");
         
     }
+    @Override
+    public String toString() {
+        return "\nGalones: " + CantGalones + "\nCantitdad Pasajero: " + CantPasajero + "\nTipo de Combustible: " + getTipoCombus(Gasofa)
+                + "\nVelocidad Maxima: " + VelocidadMaxima + "\naceleracion base: " + aceleracion;
+    }
 
     
 }
